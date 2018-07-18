@@ -41,8 +41,15 @@ namespace mWSEI.Views.Menu
         }
         async void LogOutProcedure(object sender, EventArgs e)
         {
-            DisplayAlert("", "Wylogowano!", "Ok");
-            await Navigation.PushAsync(new LoginPage());
+            if (Device.OS == TargetPlatform.Android)
+            {
+                Application.Current.MainPage = new LoginPage();
+            }
+            else if (Device.OS == TargetPlatform.iOS)
+            {
+                await Navigation.PushModalAsync(new LoginPage());
+            }
+            await DisplayAlert("", "Wylogowano!", "Ok");
         }
     }
 }
