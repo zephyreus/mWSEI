@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mWSEI.Views.DetailViews.TwojeDane"
+            Title="Twoje dane">
+
+    <ContentPage Title="Osobowe">
+        <ContentPage.Content>
+            <StackLayout VerticalOptions="FillAndExpand" IsVisible="False">
+                <StackLayout x:Name="LogoStack">
+                    <Label x:Name="AlertNoInternet" HorizontalTextAlignment="Center" TextColor="White" BackgroundColor="Red" />
+                </StackLayout>
+            
+                <Label Text="Osobowe"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="Adresy">
+        <ContentPage.Content>
+            <StackLayout VerticalOptions="FillAndExpand">
+
+                <Label Text="Adresy"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="Wykszatłcenie">
+        <ContentPage.Content>
+            <StackLayout VerticalOptions="FillAndExpand">
+
+                <Label Text="Wykształcenie"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+</TabbedPage>

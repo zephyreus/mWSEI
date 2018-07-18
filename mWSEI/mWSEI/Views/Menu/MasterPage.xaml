@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mWSEI.Views.Menu.MasterPage"
+             Title="Menu">
+
+    <ContentPage.Content>
+        <StackLayout x:Name="MasterStack" VerticalOptions="FillAndExpand">
+
+            <StackLayout x:Name="TopStack">
+                <Label Text="mWSEI" HorizontalOptions="Center" FontSize="Large" BackgroundColor="White"/>
+            </StackLayout>
+
+            <StackLayout x:Name="MidStack" VerticalOptions="FillAndExpand">
+                <ListView x:Name="listview" SeparatorVisibility="None">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid BackgroundColor="{Binding BackgroundColor}">
+                                    <Label Grid.Column="0" Text="{Binding Title}" TextColor="Black" FontSize="Medium" HorizontalTextAlignment="Center"/>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+
+            <StackLayout x:Name="Footer" VerticalOptions="EndAndExpand">
+                <Button x:Name="Button_Wyloguj" Text="Wyloguj" Clicked="LogOutProcedure" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

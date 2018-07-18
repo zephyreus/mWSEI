@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mWSEI.Views.DetailViews.PrzedmiotyOceny"
+            Title="Przedmioty i oceny">
+    
+    <ContentPage Title="Semestr i oceny">
+        <ContentPage.Content>
+            <StackLayout VerticalOptions="FillAndExpand" IsVisible="False">
+                <StackLayout x:Name="LogoStack">
+                    <Label x:Name="AlertNoInternet" HorizontalTextAlignment="Center" TextColor="White" BackgroundColor="Red" />
+                </StackLayout>
+
+                <Label Text="Semestr i oceny"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="Zapisy na przedmioty">
+        <ContentPage.Content>
+            <StackLayout VerticalOptions="FillAndExpand">
+
+                <Label Text="Zapisy na przedmioty"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+</TabbedPage>

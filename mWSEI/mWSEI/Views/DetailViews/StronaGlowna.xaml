@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mWSEI.Views.DetailViews.StronaGlowna"
+            Title="Strona główna">
+    <ContentPage.Content>
+            <StackLayout VerticalOptions="FillAndExpand">
+
+                <StackLayout x:Name="LogoStack" IsVisible="False">
+                    <Label x:Name="AlertNoInternet" HorizontalTextAlignment="Center" TextColor="White" BackgroundColor="Red" />
+                </StackLayout>
+
+                <Label Text="Witamy w mWSEI"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+
+            <Grid>
+                <Label Text="-" x:Name="Minus" IsVisible="True" HorizontalOptions="EndAndExpand"/>
+                <Label Text="+" x:Name="Plus" IsVisible="True" HorizontalOptions="EndAndExpand"/>
+            </Grid>
+
+            </StackLayout>
+        </ContentPage.Content>
+</ContentPage>

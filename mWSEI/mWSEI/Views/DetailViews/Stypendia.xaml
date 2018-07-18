@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mWSEI.Views.DetailViews.Stypendia"
+            Title="Stypendia">
+
+    <ContentPage Title="Naliczenia">
+        <ContentPage.Content>
+            <StackLayout VerticalOptions="FillAndExpand" IsVisible="False">
+                <StackLayout x:Name="LogoStack">
+                    <Label x:Name="AlertNoInternet" HorizontalTextAlignment="Center" TextColor="White" BackgroundColor="Red" />
+                </StackLayout>
+
+                <Label Text="Naliczenia"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="Wnioski">
+        <ContentPage.Content>
+            <StackLayout VerticalOptions="FillAndExpand">
+                
+                <Label Text="Wnioski"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="Wypłaty">
+        <ContentPage.Content>
+            <StackLayout VerticalOptions="FillAndExpand">
+
+                <Label Text="Wypłaty"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="Dane">
+        <ContentPage.Content>
+            <StackLayout VerticalOptions="FillAndExpand">
+
+                <Label Text="Dane"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+    
+</TabbedPage>

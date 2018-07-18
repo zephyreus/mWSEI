@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mWSEI.Views.DetailViews.TokStudiow"
+            Title="Tok studiów">
+
+    <ContentPage Title="Dane o toku">
+        <ContentPage.Content>
+            <StackLayout VerticalOptions="FillAndExpand" IsVisible="False">
+                <StackLayout x:Name="LogoStack">
+                    <Label x:Name="AlertNoInternet" HorizontalTextAlignment="Center" TextColor="White" BackgroundColor="Red" />
+                </StackLayout>
+
+                <Label Text="Dane o toku"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="Plany studiów">
+        <ContentPage.Content>
+            <StackLayout VerticalOptions="FillAndExpand">
+                
+                <Label Text="Plany studiów"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="Rygory">
+        <ContentPage.Content>
+            <StackLayout VerticalOptions="FillAndExpand">
+
+                <Label Text="Rygory"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="Twoje grupy">
+        <ContentPage.Content>
+            <StackLayout VerticalOptions="FillAndExpand">
+
+                <Label Text="Twoje grupy"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="Egzamin dyplomowy">
+        <ContentPage.Content>
+            <StackLayout VerticalOptions="FillAndExpand">
+
+                <Label Text="Egzamin dyplomowy"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="Zapisy na specjalności">
+        <ContentPage.Content>
+            <StackLayout VerticalOptions="FillAndExpand">
+
+                <Label Text="Zapisy na specjalności"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+</TabbedPage>
